@@ -1,7 +1,7 @@
 import csv
 from statistics import mean
 from unittest.util import sorted_list_difference    
-with open ('d:/python/grades.csv') as fin:
+with open ('./grades.csv') as fin:
     reader = csv.reader(fin)
     for row in reader:
         students_and_grades = {row[0]:row[1:]}
